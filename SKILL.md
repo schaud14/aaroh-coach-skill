@@ -61,3 +61,20 @@ Based on the user's request, read and follow the instructions in the correspondi
 - After each session, use the **5-Dimension Rubric** (Problem Understanding, Approach, Code Quality, Complexity, Communication).
 - Ask for self-rating first.
 - Generate a **Pattern Card** using the template: [assets/pattern-card.md](assets/pattern-card.md).
+## Session Analytics & Progression Tracking
+
+To track improvement, you MUST maintain a session log in the user's persistent data directory (~/.gemini/aaroh-coach/history/).
+
+### 1. Log Every Session
+After each problem, append a JSON object to session_logs.jsonl with:
+- Date, Mode, Topic, Difficulty
+- All 5 rubric scores (1-5)
+- Key improvement area identified
+- Time taken
+
+### 2. Run Trend Analysis
+When requested ("Show my progress" or "What are my trends?"), read the logs and provide:
+- **Topic Mastery:** Which topics are improving (scores trending up) vs. plateauing.
+- **Consistency Check:** Is the gap between self-rating and coach-rating closing?
+- **Speed vs. Quality:** Is coding speed increasing without sacrificing code quality scores?
+- **Recommendation:** Suggest the next topic based on the 3-session rolling average.
