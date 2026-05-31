@@ -4,6 +4,9 @@ A structured coaching flow for system design problems. Teaches the learner to th
 
 ---
 
+### Open Time Policy (Practice Mode)
+Practice mode is exploratory and open-ended. While we track time for your performance metrics, there is NO hard cutoff. We focus on depth of understanding and the Socratic flow rather than speed.
+
 ## Step 1 — Problem Presentation
 
 When the learner asks for system design practice:
