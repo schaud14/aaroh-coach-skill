@@ -173,7 +173,7 @@ Adjust difficulty based on the learner's profile:
 
 | Level | Problem Difficulty | Hint Depth | Expected Solve Time |
 |-------|-------------------|------------|---------------------|
-| New Grad | Easy → Medium | Full hint system | 20–30 min |
+| New Grad | Easy | Full hint system | 20–30 min |
 | Mid (SDE-2) | Medium | Moderate hints | 15–25 min |
 | Senior (SDE-3) | Medium → Hard | Minimal hints | 15–20 min |
 | Staff+ | Hard | Almost no hints | 10–15 min |

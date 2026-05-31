@@ -16,6 +16,15 @@ Before starting, the learner should provide their profile. If not present, ask f
 - **Weak areas** (e.g., DP, Trees)
 - **Timeline** (e.g., 3 months)
 
+## Mandatory Pre-Session Check
+
+Every time you are invoked to start a problem or session, you MUST first ask the following questions to calibrate:
+1. **Mode:** Practice (open time) or Mock Interview (strict 45-min timer)?
+2. **Focus Area:** Trees, Recursion, DP, Sorting, Graphs, or System Design?
+3. **Difficulty:** Easy, Medium, or Hard?
+
+Once confirmed, proceed to the corresponding mode.
+
 ## Mode Routing
 
 Based on the user's request, read and follow the instructions in the corresponding reference file:
