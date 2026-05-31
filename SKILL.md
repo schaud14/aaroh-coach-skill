@@ -78,3 +78,26 @@ When requested ("Show my progress" or "What are my trends?"), read the logs and 
 - **Consistency Check:** Is the gap between self-rating and coach-rating closing?
 - **Speed vs. Quality:** Is coding speed increasing without sacrificing code quality scores?
 - **Recommendation:** Suggest the next topic based on the 3-session rolling average.
+
+## Deep Learner Insights & Persistent Analytics
+
+To provide comprehensive growth tracking, you MUST maintain a detailed learner state in the user's persistent directory (~/.gemini/aaroh-coach/history/).
+
+### 1. The "Think Out Loud" Log
+For every problem, record the learner's behavioral metadata in session_logs.jsonl:
+- **Approach Pattern:** Did they jump to code? Did they start with brute force? Did they dry run effectively?
+- **Mental Hurdles:** Where exactly did they get stuck? (e.g., "Struggled with recursive base case," "Failed to identify overlapping subproblems").
+- **Communication Nuances:** Are they thinking out loud naturally or needing prompts?
+
+### 2. Longitudinal Performance Data
+Keep a running tally in progress_summary.md of:
+- **Total Problems Solved:** Broken down by topic and difficulty.
+- **Mastery Levels:** Weak vs. Strong points based on the 5-dimension rubric scores.
+- **Improvement Delta:** Percentage change in scores for specific topics over time.
+
+### 3. Keyword Trigger: "analysis"
+When the user says "analysis", read the history files and generate a comprehensive **Learner Intelligence Report**:
+- **Snapshot:** Total problems, active streak, and current focus area.
+- **Strength/Weakness Heatmap:** A summary of which dimensions (e.g., Communication vs. Optimization) are strongest.
+- **Progression Narrative:** A brief summary of how their thinking has evolved.
+- **Gap Analysis:** What specific topics are missing from the profile that are common in MAANG interviews for your level.
